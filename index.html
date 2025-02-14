@@ -9,44 +9,48 @@
 </head>
 <body>
     <div class="imgcontainer">
-        <img src="background.jpg" alt="Picture of Leaves" height=1080px>
+        <img src="background.jpg" alt="Picture of Leaves" height=auto>
     </div>
     <div class="content">
         <h2>Sign up for the product now</h2>
-        <p>Please enter your details below</p>
+        <p class="introtext">Join now for a chance to elevate your
+             senses with our new Aloe Vera infusion hair serum! you <em>know</em> you need it!</p>
         <div class="formcontainer">
-            <h3>Contact Information</h3>
-            <form>
-                <div class="formdata">
-                    <p>
-                        <label for="firstname">First Name:</label>
-                        <input type="text" id="firstname" name="first_name">
-                    </p>
-                    <p>
-                        <label for="lastname">Last Name:</label>
-                        <input type="text" id="lastname" name="last_name">
-                    </p>
-                    <p>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="user_email">
-                    </p>
-                    <p>
-                        <label for="number">Phone Number:</label>
-                        <input type="text" id="number" name="user_number">
-                    </p>
-                    <p>
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="user_password">
-                    </p>
-                    <p>
-                        <label for="passwordconf">Confirm Password:</label>
-                        <input type="password" id="passwordconf">
-                    </p>
+            <form action="https://httpbin.org/post" method="post">
+                <div class="formbackground">
+                    <h3>Contact Information</h3>
+                    <div class="formdata">
+                        <p>
+                            <label for="firstname">First Name:</label>
+                            <input type="text" id="firstname" name="first_name">
+                        </p>
+                        <p>
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" id="lastname" name="last_name">
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="user_email">
+                        </p>
+                        <p>
+                            <label for="number">Phone Number:</label>
+                            <input type="text" id="number" name="user_number">
+                        </p>
+                        <p>
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="user_password">
+                        </p>
+                        <p>
+                            <label for="passwordconf">Confirm Password:</label>
+                            <input type="password" id="passwordconf">
+                        </p>
+                    </div>
                 </div>
                 <p class="button">
                     <button type="submit">Create Account</button>
                 </p>
             </form>
+            <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </div>
 </body>

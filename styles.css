@@ -12,7 +12,7 @@ body {
 }
 
 img {
-    width: 30vw;
+    width: 35vw;
     height: 100vh;
 }
 
@@ -20,13 +20,75 @@ img {
 h2 {
     font-family: norwester, sans-serif;
     font-weight: bold;
+    font-size: 36px;
+    padding-left: 24px;
 }
 
+.introtext,
+.button,
+form~p {
+    padding-left: 36px;
+}
+
+h3 {
+    font-family: norwester, sans-serif;
+    padding-left: 36px;
+    padding-top: 36px;
+}
+
+
+form {
+    display: inline-block;
+}
+
+label {
+    display: inline-block;
+    min-width: 90px;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+label,
+input {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 .content {
-    padding: 24px;
+    width: 65vw;
+    height: 100vh;
+    background-color: #f9fafb;
 }
 
 .formdata {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    width: 400px;
+    grid-template-columns: auto auto;
+    grid-auto-rows: 64px;
+    column-gap: 36px;
+    padding:36px;
+    margin-bottom: 36px;
+}
+
+.formbackground {
+    background: white;
+    width: 65vw;
+    padding: 0;
+    box-shadow: 5px 5px 5px #dbdcdc;
+}
+
+button {
+    background-color: #596d48;
+    color: white;
+    font-size: 20px;
+    padding: 12px 24px;
+    border-radius: 0.5em;
+    border: none;
+    box-shadow: 5px 5px 5px #dbdcdc;
+}
+
+a:link {
+    color: #596d48;
 }
