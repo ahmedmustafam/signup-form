@@ -1,0 +1,32 @@
+@import 'node_modules/modern-normalize/modern-normalize.css';
+
+@font-face {
+    font-family: norwester;
+        src: url("/fonts/norwester-webfont.woff2") format("woff2");
+}
+
+body {
+    display: flex;
+    flex: auto;
+    
+}
+
+img {
+    width: 30vw;
+    height: 100vh;
+}
+
+
+h2 {
+    font-family: norwester, sans-serif;
+    font-weight: bold;
+}
+
+.content {
+    padding: 24px;
+}
+
+.formdata {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
