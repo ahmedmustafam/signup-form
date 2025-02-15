@@ -113,7 +113,6 @@ a:link {
     color: #596d48;
 }
 
-/* Form validation */
 
 #password:invalid,
 #passwordconf:invalid {
