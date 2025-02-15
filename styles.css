@@ -12,26 +12,30 @@ body {
 }
 
 img {
-    width: 35vw;
-    height: 100vh;
+    width: 40vw;
 }
 
 
 h2 {
     font-family: norwester, sans-serif;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 42px;
     padding-left: 24px;
 }
 
 .introtext,
-.button,
-form~p {
+.button {
+    padding-left: 36px;
+    font-size: 24px;
+}
+
+form ~ p {
     padding-left: 36px;
 }
 
 h3 {
     font-family: norwester, sans-serif;
+    font-size: 24px;
     padding-left: 36px;
     padding-top: 36px;
 }
@@ -48,17 +52,33 @@ label {
     font-weight: 600;
 }
 
+input {
+    border: 2px solid #eceef0;
+    height: 1.8em;
+    width: max-content;
+    border-radius: 0.5em;
+}
+
 label,
 input {
     display: flex;
     flex-direction: column;
 }
 
+input:focus {
+    outline: none;
+    border: 2px solid #596d48;
+    box-shadow: 2px 2px 2px #dbdcdc;
+    transition: 150ms ease;
+}
+
+input:hover {
+    border: 2px solid #596d48;
+}
 
 
 .content {
-    width: 65vw;
-    height: 100vh;
+    width: 60vw;
     background-color: #f9fafb;
 }
 
@@ -74,7 +94,7 @@ input {
 
 .formbackground {
     background: white;
-    width: 65vw;
+    width: 60vw;
     padding: 0;
     box-shadow: 5px 5px 5px #dbdcdc;
 }
@@ -91,4 +111,11 @@ button {
 
 a:link {
     color: #596d48;
+}
+
+/* Form validation */
+
+#password:invalid,
+#passwordconf:invalid {
+    border: 2px solid red;
 }

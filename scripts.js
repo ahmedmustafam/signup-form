@@ -1,8 +1,10 @@
-function greetUser() {
-    console.log("Whats up my dawg!");
-}
+const password1 = document.getElementById("password");
+const password2 = document.getElementById("passwordconf");
 
-greetUser();
-
-const mail = document.getElementById("#mail");
-mail.style.color = "#333";
+password2.addEventListener("input", () => {
+    if (password2.value != password1.value) {
+        password2.setCustomValidity("Passwords do not match");
+    } else {
+        password2.setCustomValidity("");
+    }
+})
